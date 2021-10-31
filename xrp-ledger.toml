@@ -1,0 +1,17 @@
+[METADATA]
+modified = 2021-10-31T00:00:00.000Z
+expires = 2025-10-31T00:00:00.000Z
+
+[[ACCOUNTS]]
+address = "rHyB8fpHCTB4NhwayEtNH9DsjLue33n1ph"
+
+[[PRINCIPALS]]
+name = "Denis Angell"
+email = "contact@thebezos.org"
+
+[[CURRENCIES]]
+code = "BZO"
+issuer = "rHyB8fpHCTB4NhwayEtNH9DsjLue33n1ph"
+network = "mainnet"
+display_decimals = 6
+symbol = "$"
