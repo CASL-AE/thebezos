@@ -1,0 +1,26 @@
+*.db
+venv
+__pycache__
+.idea/*
+*.pyc
+tmp
+.idea/
+chains/
+build/
+/.eggs
+celerybeat-schedule
+/logs
+
+# OS generated files #
+######################
+.DS_Store
+.DS_Store?
+
+# ENV files #
+######################
+env
+
+# PyTest #
+######################
+.pytest_cache
+.github
