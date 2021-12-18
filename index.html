@@ -38,6 +38,7 @@
     </script>
 </head>
 <body>
+<!-- <body> -->
     <header class="site-header">
         <div class="top-header-bar">
             <div class="container">
@@ -53,9 +54,10 @@
                     </div><!-- .col -->
 
                     <div class="col-12 col-lg-4 d-flex flex-wrap justify-content-center justify-content-lg-end align-items-center">
-                        <div class="donate-btn">
-                            <a href="https://livenet.xrpl.org/accounts/rHyB8fpHCTB4NhwayEtNH9DsjLue33n1ph">View on Mainnet</a>
-                        </div><!-- .donate-btn -->
+                        <button onclick="buy()" class="donate-btn">View on Mainnet</button>
+                        <div>
+                            <h5 id="error_handle" />
+                        </div>
                     </div><!-- .col -->
                 </div><!-- .row -->
             </div><!-- .container -->
@@ -102,6 +104,7 @@
                                 </header><!-- .entry-header -->
 
                                 <footer class="entry-footer d-flex flex-wrap align-items-center mt-5">
+                                    <!-- <div id="buy_button_container"></div> -->
                                     <a href="https://sologenic.org/trade?market=BZO%2BrHyB8fpHCTB4NhwayEtNH9DsjLue33n1ph%2FXRP" class="btn gradient-bg mr-2">Purchase Now</a>
                                 </footer><!-- .entry-footer -->
                             </div><!-- .col -->
@@ -146,7 +149,7 @@
                         </figure>
 
                         <header class="entry-header">
-                            <h3 class="entry-title">Holder Residual</h3>
+                            <h3 id="demo" class="entry-title">Holder Residual</h3>
                         </header>
 
                         <div class="entry-content">
@@ -185,7 +188,7 @@
                         </header><!-- .entry-header -->
 
                         <div class="entry-content mt-5">
-                            <p>The Bezos is a token built on the XRP ledger. We are currently planning to add the Bittrue exchange. Our goal is to get Amazon to integrate with the XRP Ledger to accept payments using XRP while rewarding BEZOS token holders.</p>
+                            <p>The Bezos is a liquidity pool currency built on the XRP ledger. We are currently planning to add the Bittrue exchange. Our goal is to achieive a liquidity pool currency, build an application that can manage the process. Finally, we want to get Amazon to integrate with the XRP Ledger to accept payments using BZO while rewarding BEZOS token holders.</p>
                         </div><!-- .entry-content -->
 
                     </div><!-- .welcome-content -->
@@ -398,6 +401,13 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> Samy,
         </div><!-- .footer-bar -->
     </footer><!-- .site-footer -->
 
+    <!-- <script type='text/javascript' src='js/require.js'></script> -->
+    <!-- <script src="https://unpkg.com/react@17/umd/react.production.min.js" crossorigin></script> -->
+    <!-- <script src="https://unpkg.com/react-dom@17/umd/react-dom.production.min.js" crossorigin></script> -->
+    <script src="https://cdn.jsdelivr.net/gh/ethereum/web3.js/dist/web3.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/ipfs-core/dist/index.min.js"></script>
+
+
     <script type='text/javascript' src='js/jquery.js'></script>
     <script type='text/javascript' src='js/jquery.collapsible.min.js'></script>
     <script type='text/javascript' src='js/swiper.min.js'></script>
@@ -406,6 +416,13 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> Samy,
     <script type='text/javascript' src='js/jquery.countTo.min.js'></script>
     <script type='text/javascript' src='js/jquery.barfiller.js'></script>
     <script type='text/javascript' src='js/custom.js'></script>
+    <script type="text/javascript" src='web3/services.js'></script>
+    <script type="text/javascript" src='web3/index.js'></script>
+    <script>
+        window.addEventListener('load', function () {
+            fireItUp()
+        });
+    </script>
 
 </body>
 </html>
